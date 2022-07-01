@@ -34,21 +34,22 @@ Download the model weight used in the paper:
 #### VAIS dataset
 |                                             |Accuracy|download | 
 |---------------------------------------------|:-------:|:---------:|
-|MsIFT(classification/work_dirs/VAIS/SOTA_VAIS.py)| 92.3|[Google](https://drive.google.com/file/d/1zUT3dc_swMoL5w8s5DGCloj65aR0Er1W/view?usp=sharing)
+|[MsIFT](classification/work_dirs/VAIS/SOTA_VAIS.py)| 92.3|[Google](https://drive.google.com/file/d/1zUT3dc_swMoL5w8s5DGCloj65aR0Er1W/view?usp=sharing)
 
 Put the model to ***classification/work_dirs/VAIS/***
 #### DFC2013 dataset
 |                                             |Accuracy|download | 
 |---------------------------------------------|:-------:|:---------:|
-| MsIFT(classification/work_dirs/DFC2013/finetune_9285.py)| 93.02 |[Google](https://drive.google.com/file/d/13eJiJymZYaZjMxMCuqHE0FEfmD_Q4uAQ/view?usp=sharing)
+| [MsIFT](classification/work_dirs/DFC2013/finetune_9285.py)| 93.02 |[Google](https://drive.google.com/file/d/13eJiJymZYaZjMxMCuqHE0FEfmD_Q4uAQ/view?usp=sharing)
 
 Put the model to ***classification/work_dirs/DFC2013/***
 
 #### SpaceNet6 dataset
 |                                             |Seg Method|mIoU|Accuarcy | download | 
 |---------------------------------------------|:-------:|:-------:|:---------:|:---------:|:---------:|
-| MTL-Det(segmentation/work_dir/PSPNet/pspnet_r50-d8.py) |PSPNet|67.51|70.49|[Google](https://drive.google.com/file/d/1S_LFVtEoE_L6hJpu8FGzah4DszFFe6ma/view?usp=sharing)
-| MTL-Det(segmentation/work_dir/DANet/danet.py) |DANet|67.94|70.82|[Google](https://drive.google.com/file/d/1r-IHv73nZda4EEdGSZ3N7gYWLaeATd_y/view?usp=sharing)
+| [MsIFT](segmentation/work_dir/PSPNet/pspnet_r50-d8.py) |PSPNet|67.51|70.49|[Google](https://drive.google.com/file/d/1S_LFVtEoE_L6hJpu8FGzah4DszFFe6ma/view?usp=sharing)
+| [MsIFT](segmentation/work_dir/DANet/danet.py) |DANet|67.94|70.82|[Google](https://drive.google.com/file/d/1r-IHv73nZda4EEdGSZ3N7gYWLaeATd_y/view?usp=sharing)
+
 Put the PSPNet model to ***segmentation/work_dir/PSPNet/***
 Put the DANet model to ***segmentation/work_dir/DANet/***
 
