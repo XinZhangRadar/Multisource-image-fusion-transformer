@@ -4,7 +4,7 @@ This is the official implementation of ***MsIFT*** (Information Fusion), a trans
 **MsIFT : Multi-source Image Fusion Transformer[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9508842)**  <br />
 Xin Zhang , Hangzhi Jiang, Nuo Xu, Lei Ni, Chunlei Huo , Chunhong Pan<br />
 
-![intro](pipeline.pdf)
+![intro](pipeline.jpg)
 
 Our code is based on mmsegmentation and mmclassification.
 
