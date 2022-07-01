@@ -46,21 +46,53 @@ Put the model to ***classification/work_dirs/DFC2013/***
 
 #### SpaceNet6 dataset
 |                                             |Seg Method|mIoU|Accuarcy | download | 
-|---------------------------------------------|:-------:|:-------:|:---------:|:---------:|:---------:|
+|---------------------------------------------|:-------:|:-------:|:---------:|:---------:|
 | [MsIFT](segmentation/work_dir/PSPNet/pspnet_r50-d8.py) |PSPNet|67.51|70.49|[Google](https://drive.google.com/file/d/1S_LFVtEoE_L6hJpu8FGzah4DszFFe6ma/view?usp=sharing)
 | [MsIFT](segmentation/work_dir/DANet/danet.py) |DANet|67.94|70.82|[Google](https://drive.google.com/file/d/1r-IHv73nZda4EEdGSZ3N7gYWLaeATd_y/view?usp=sharing)
 
 Put the PSPNet model to ***segmentation/work_dir/PSPNet/***
+
 Put the DANet model to ***segmentation/work_dir/DANet/***
 
 ## Evaluate
 1.Multi-GPUs Test
+
+VAIS:
 ```shell
-./tools/dist_test.sh work_dirs/HTL_1x_faster/HTL_ins_faster_rcnn_r50_fpn_1x_hrsid.py work_dirs/HTL_1x_faster/epoch_11.pth 8 --eval mAP
+cd MsIFT/classification
+./tools/dist_test.sh work_dirs/VAIS/SOTA_VAIS.py work_dirs/VAIS/VAIS.pth 8 --eval accuracy
 ```
-2.Single-GPU Test
+
+DFC2013:
 ```shell
-python tools/test.py work_dirs/HTL_1x_faster/HTL_ins_faster_rcnn_r50_fpn_1x_hrsid.py work_dirs/HTL_1x_faster/epoch_11.pth --eval mAP
+cd MsIFT/classification
+./tools/dist_test.sh work_dirs/DFC2013/finetune_9285.py work_dirs/DFC2013/DFC2013.pth 8 --eval accuracy
+```
+
+SpaceNet6:
+```shell
+cd MsIFT/segmentation
+./tools/dist_test.sh work_dir/PSPNet/pspnet_r50-d8.py work_dir/PSPNet/PSPNet.pth 8 --eval mIoU
+```
+
+2.Single-GPU Test
+
+VAIS:
+```shell
+cd MsIFT/classification
+python tools/test.py work_dirs/VAIS/SOTA_VAIS.py work_dirs/VAIS/VAIS.pth --eval accuracy
+```
+
+DFC2013:
+```shell
+cd MsIFT/classification
+python tools/test.py work_dirs/DFC2013/finetune_9285.py work_dirs/DFC2013/DFC2013.pth 8 --eval accuracy 
+```
+
+SpaceNet6:
+```shell
+cd MsIFT/segmentation
+python tools/test.py work_dir/PSPNet/pspnet_r50-d8.py work_dir/PSPNet/PSPNet.pth 8 --eval mIoU
 ```
 
 ## Citation
