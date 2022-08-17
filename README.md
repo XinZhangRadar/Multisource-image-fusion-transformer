@@ -1,5 +1,5 @@
 # MsIFT : Multi-source Image Fusion Transformer
-This is the official implementation of ***MsIFT*** (Information Fusion), a transformer-based image fusion method for classification and segmantation. For more details, please refer to:
+This is the official implementation of ***MsIFT*** (Remote Sensing), a transformer-based image fusion method for classification and segmantation. For more details, please refer to:
 
 **MsIFT : Multi-source Image Fusion Transformer[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9508842)**  <br />
 Xin Zhang , Hangzhi Jiang, Nuo Xu, Lei Ni, Chunlei Huo , Chunhong Pan<br />
