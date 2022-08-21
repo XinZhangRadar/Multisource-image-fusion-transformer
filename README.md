@@ -96,6 +96,7 @@ python tools/test.py work_dir/PSPNet/pspnet_r50-d8.py work_dir/PSPNet/PSPNet.pth
 ```
 
 ## Citation
+If you find our work relevant to your research, please cite:
 ```
 @Article{rs14164062,
 AUTHOR = {Zhang, Xin and Jiang, Hangzhi and Xu, Nuo and Ni, Lei and Huo, Chunlei and Pan, Chunhong},
