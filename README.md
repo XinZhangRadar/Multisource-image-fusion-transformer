@@ -1,7 +1,7 @@
 # MsIFT : Multi-source Image Fusion Transformer
 This is the official implementation of ***MsIFT*** (Remote Sensing), a transformer-based image fusion method for classification and segmantation. For more details, please refer to:
 
-**MsIFT : Multi-source Image Fusion Transformer[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9508842)**  <br />
+**MsIFT : Multi-source Image Fusion Transformer[[Paper]](https://www.mdpi.com/2072-4292/14/16/4062)**  <br />
 Xin Zhang , Hangzhi Jiang, Nuo Xu, Lei Ni, Chunlei Huo , Chunhong Pan<br />
 
 ![intro](pipeline.jpg)
@@ -96,5 +96,16 @@ python tools/test.py work_dir/PSPNet/pspnet_r50-d8.py work_dir/PSPNet/PSPNet.pth
 ```
 
 ## Citation
-
-**Coming soon**
+```
+@Article{rs14164062,
+AUTHOR = {Zhang, Xin and Jiang, Hangzhi and Xu, Nuo and Ni, Lei and Huo, Chunlei and Pan, Chunhong},
+TITLE = {MsIFT: Multi-Source Image Fusion Transformer},
+JOURNAL = {Remote Sensing},
+VOLUME = {14},
+YEAR = {2022},
+NUMBER = {16},
+ARTICLE-NUMBER = {4062},
+ISSN = {2072-4292},
+DOI = {10.3390/rs14164062}
+}
+```
